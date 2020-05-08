@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/textViewname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:text="name" />
+     <TextView
+        android:id="@+id/textViewroaster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewname"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="90dp"
+        android:text="roaster"
+        android:textColor="#8E8E8E" />
+
+    <TextView
+        android:id="@+id/textViewdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="date" 
+        
+        android:textColor="#AEAEAE"/>
+
+    <TextView
+        android:id="@+id/textViewnote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewroaster"
+        android:layout_marginTop="4dp"
+        android:layout_alignLeft="@id/textViewroaster"
+        android:text="note" 
+        android:ems="20"
+        android:textColor="#ff6E6E6E"/>
+
+
+
+</RelativeLayout>

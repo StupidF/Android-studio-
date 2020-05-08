@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/ra"
+        >
+
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ra">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textSize="25sp"
+                android:text="name" />
+
+            <LinearLayout
+                android:id="@+id/linelayout" 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="date:" />
+            <TextView
+                android:id="@+id/roaster"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="roaster:" />
+                
+            </LinearLayout>
+
+            <ScrollView 
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/linelayout"
+                android:background="@drawable/scroll">
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="Cupping Note:" />
+
+                    <TextView
+                        android:id="@+id/note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="note" />
+                    
+                </LinearLayout>
+            </ScrollView>
+            
+        </RelativeLayout>
+         <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+           <com.github.mikephil.charting.charts.CombinedChart
+                android:id="@+id/chart2"
+                android:layout_width="450dp"
+                android:layout_height="300dp" 
+                android:background="@drawable/ra"/>
+
+            <!-- THIS IS JUST A PLACEHOLDER -->
+
+            <!-- THIS IS JUST A PLACEHOLDER -->
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <com.github.mikephil.charting.charts.RadarChart
+        android:id="@+id/chartradar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" 
+        android:background="@drawable/ra"/>
+    </LinearLayout>
+    
+
+</ScrollView>
